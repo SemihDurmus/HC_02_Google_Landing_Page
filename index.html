@@ -4,58 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="stylesheet" href="./landing_page.css">
-    <link rel="shortcut icon" href="./images/google_logo.png" type="image/png">
+    <link rel="stylesheet" href="google.css">
+    <link rel="shortcut icon" href="./images/gfavicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div class="left top">
-            <a class="small_link" href="#" id="link1">About</a>
-            <a class="small_link" href="#" id="link2">Store</a>
-        </div>
-        <div class="right top">
-            <a class="small_link" href="#" id="link3">Gmail</a>
-            <a class="small_link" href="#" id="link4">Images</a>
-            <a href="#" id="waffle"><img  src="./images/icon-menu.jpg" alt="waffle"></a>
-            <a href="#" id="sign_in"><button>Sign In</button></a>
-        </div>
+
+        <ul class="header-left">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+
+        <ul class="header-right">
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#"><img id="app-icon" src="./images/appicon.png" alt="Waffle menu"></a></li>
+            <li><button id="sign-in-btn">Sign In</button></li>
+        </ul>
+
     </header>
 
-    <section>
-        <div id="google_logo">
-            <img src="./images/googlelogo.png" alt="google_logo">
-        </div>
-        <form>
-            <input type="search" name="Search" id="search_input">
-            <img src="./images/Magnifying_glass_icon.png" alt="Magnifying Glass" id="magnify">
-            <img src="./images/google_microphone.png" alt="Microphone" id="microphone">
+    <main>
+        <img id="google-logo" src="./images/googlelogo.png" alt="Google Logo" >
+        <form action="#" class="searchbar">
+            <img id="magnifying-glass-icon" src="./images/magnifying_glass.jpg" alt="Magnifyung Glass" >
+            <input id="search-box" type="search" name="Search" >
+            <img id="keyboard-icon" src="./images/keyboard.png" alt="Keyboard Icon">
+            <img id="microphone-icon" src="./images/google_microphone.png" alt="Microphone Icon">
         </form>
-        <div id="sub_buttons">
-            <button class="sub">Google Search</button>
-            <button class="sub" id="lucky">I'm Feeling Lucky</button>
+        <div class="btn-container">
+            <button id="btn-1" type="button" name="Button">Google Search</button>
+            <button id="btn-2" type="button" name="Button">I'm Feeling Lucky</button>
         </div>
-        <div id="explanation">
-            <p>Other Languages you can use Google: <span> <a href="#">English</a> </span></p>
+        <div class="language-box">
+            <p id="language">Other languages you can use Google: <a href="#">Bokmål</a></p>
         </div>
-    </section>
+    </main>
 
     <footer>
-        <div id="footer_top">
-            <p class="small_link" id="country">Turkey</p>
-        </div>
-        <div id="footer_bottom">
-            <div id="bottom_left">
-                <a class="small_link" href="#">Advertising</a>
-                <a class="small_link" href="#">Business</a>
-                <a class="small_link" href="#">How Search Works</a>
-            </div>
-            <div id="bottom_right">
-                <a class="small_link" href="#">Privacy</a>
-                <a class="small_link" href="#">Teams</a>
-                <a class="small_link" href="#">Settings</a>
-            </div>
-        </div>
+        <div class="country">Norway</div>
+        <ul class="footer-left">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li>
+        </ul>
+        <ul class="footer-right">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
     </footer>
-
 </body>
 </html>
